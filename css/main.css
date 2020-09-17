@@ -4,12 +4,239 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #312d2d;
     color: #fff;
-    font-family: Neucha;
+    font-family: Neucha, sans-serif;
 }
 
-nav>ul>img, section>div>img{
-    width: 50px;
-    height: 50px;
+body{
+    background:#3F4451;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    background:#22262b;
+    color: #312d2d;
+}
+
+nav{
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 45px;
+    height: 45px;
+    margin-left: 45px;
+    margin-right: 15px;
+}
+
+.items-menu{
+    width: auto;
+    height: 100%;
+    text-transform: uppercase;
+    padding: 30px;
+    transition: all 0.15s;
+}
+
+.items-menu:hover{
+    cursor: pointer;
+    background: #1a1b1d;
+    border-radius: 5px;
+}
+
+#right-side-menu-itens{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#login a{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: all 0.15s;
+}
+
+#login a:hover{
+    color: #ccccff;
+}
+
+#btn-menu{
+    border: none;
+    width: 200px;
+    height: 100%;
+    color: #22262b !important;
+    background:#1a1b1d;
+    cursor: pointer;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-menu:hover{
+    background:#16171a;
+    color: red;
+}
+
+.container-content{
+    display: flex;
+    height: 100vh;
+}
+
+.content-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-size: 42px;
+    line-height: 52px;
+    width: 40%;
+    font-weight: 600;
+}
+
+.text-title{
+    color: #7373fc;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.text-right{
+    text-align: right;
+    margin-left: 5%;
+}
+.text-left{
+    text-align: left;
+    margin-right: 5%;
+}
+
+.btn-secondary{
+    font-weight: 300;
+    font-size: 20px;
+    width: 100%;
+    background: #16171a;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .15s;
+}
+
+.content-box .btn-secondary:hover{
+    background: #1c2129;
+}
+
+.img-default{
+    width: 500px;
+    border-radius: 15px;
+}
+
+#cartao-credito, #contato{
+    background: #22262b;
+}
+
+.form-content{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    width: 500px;
+}
+
+.form-group input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin: 10px 10px;
+    outline: none;
+    color:#242323;
+}
+
+.form-group input[type=submit]{
+    cursor: pointer;
+    color: #fff;
+}
+
+.form-group textarea{
+    height: 150px;
+    width: 100%;
+    margin: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    color: #242323;
+    resize: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #242323;
+  }
+  
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #242323;
+  }
+  
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #242323;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #242323;
+  }
+
+footer{
+    background: #0f1011;
+    padding: 5%;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-footer h1{
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+
+#social-icons>a{
+    margin: 5px;
+    transition: all 0.15s;
+}
+#social-icons>a:hover{
+    border-bottom: 2px solid #7373fc;
+    color: red !important;
+}
+
+footer>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 30px;
 }

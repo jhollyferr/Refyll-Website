@@ -13,93 +13,123 @@
     <script src="https://use.fontawesome.com/1d72b8ddf1.js"></script>
     <title>ReffylBank</title>
   </head>
-  <body>
+  <body id="inicio">
     <!-- Header Menu -->
     <header>
       <nav>
         <ul>
-          <img src="img/icon.png" alt="Logo" />Refyll
-          <a href="#conta-digital">Conta Digital</a>
-          <a href="#cartao-credito">Cartão de Créditos</a>
-          <a href="#rewards">Rewards</a>
-          <a href="#contato">Contato</a>
+          <img src="img/icon.png" alt="Logo" id="logo"/>
+          <a href="#inicio" class="items-menu">Inicio</a>
+          <a href="#conta-digital" class="items-menu">Conta Digital</a>
+          <a href="#cartao-credito" class="items-menu">Cartão de Créditos</a>
+          <a href="#rewards" class="items-menu">Rewards</a>
+          <a href="#contato" class="items-menu">Contato</a>
         </ul>
-        <div id="">
-          <div id="">
+        <div id="right-side-menu-itens">
+          <div id="login">
             <a href="">Login</a>
           </div>
-          <a href=""><span>Quero ser Refyll</span></a>
+          <a href="" id="btn-menu"><span>Quero ser Refyll</span></a>
         </div>
       </nav>
     </header>
 
-    <div class="">
+    <div class="container">
       <!-- Conta Digital Section -->
-      <section id="conta-digital">
-        <div>
-          <p>
-            <span class="">Conta do Refyll</span>
-            Nossa conta Digital com mais de 70 milhões de clientes em todo o
+      <section id="conta-digital" class="container-content">
+        <div class="content-box">
+          <p class="text text-left">
+            <span class="text-title">Refyll Bank</span>
+            <br>
+            A nossa conta Digital com mais de 70 milhões de clientes em todo o
             Brasil.
-            <span><a href="">Segura e sem complicações</a></span>
+            <br>
+            <span><a href="" class="btn-secondary">Saiba mais</a></span>
           </p>
-          <img src="img/conta-digital.jpg" alt="Conta Digital" />
+          <img src="img/conta-digital.jpg" alt="Conta Digital" class="img-default"/>
         </div>
       </section>
 
       <!-- Cartão Crédito Section -->
-      <section id="cartao-credito">
-        <div>
-          <img src="img/cartao-credito.jpg" alt="Cartão de Crédito" />
-          <p>
-            <span class="">Cartão de Créditos</span>
+      <section id="cartao-credito" class="container-content">
+        <div class="content-box">
+          <img src="img/cartao-credito.jpg" alt="Cartão de Crédito" class="img-default"/>
+          <p class="text text-right">
+            <span class="text-title">Cartão de Créditos</span>
+            <br>
             Pode chamar ele de seu amigo. Além disso, pode chamar ele de
             moderno, gratuíto e prático também
-            <span><a href="">Saiba mais</a></span>
+            <br>
+            <span><a href="" class="btn-secondary">Saiba mais</a></span>
           </p>
           
         </div>
       </section>
 
       <!-- Rewards Section -->
-      <section id="rewards">
-        <div>
-          <p>
-            <span>Rewards</span>
-            Um programa de pontos justos e fáccil de usar.
-            <span><a href="">Saiba mais</a></span>
+      <section id="rewards" class="container-content">
+        <div class="content-box">
+          <p class="text text-left">
+            <span class="text-title">Rewards</span>
+            <br>
+            Um programa de pontos justos e fácil de usar, feito para você.
+            <br>
+            <span><a href="" class="btn-secondary">Saiba mais</a></span>
           </p>
-          <img src="img/rewards.jpg" alt="Rewards" />
+          <img src="img/rewards.jpg" alt="Rewards" class="img-default"/>
         </div>
       </section>
 
       <!-- Contato Section -->
       <section id="contato">
-          <a href="mailto:jhollyferr@gmail.com">Contato</a>
+          <div class="container-content">
+            <div class="content-box">
+              <div class="form-content">
+                <form class="form-group" autocomplete="off" >
+                  <input type="text" placeholder="Seu nome" autocomplete="off" autocapitalize="off" autocorrect="off">
+                  <input type="email" placeholder="Seu e-mail" autocomplete="off" autocapitalize="off" autocorrect="off">
+                  <input type="text" placeholder="Assunto" autocomplete="off" autocapitalize="off" autocorrect="off">
+                  <textarea placeholder="Sua mensagem" autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>
+                  <input type="submit" class="btn-secondary" value="Enviar">
+                </form>
+              </div>
+
+              <p class="text text-right">
+                <span class="text-title">Entre em Contato</span>
+                <br>
+                Oferecemos serviços e suporte 24 horas para você e sua empresa.
+                <br>
+              </p>
+            </div>
+
+          </div>
       </section>
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div>
+    <footer >
+        <div class="footer-content">
+          <div class="item-footer">
             <h1>Endereço</h1>
             <a href="">Rua nossa Sª do Rosário, nº 3175.</a>
-        </div>
+          </div>
 
-        <div>
+          <div class="item-footer">
             <h1>Contato</h1>
             <p>Email: <span>jhollyferr@gmail.com</span></p>
             <p>Telefone: <span>(97) 9186-8561</span></p>
-        </div>
+          </div>
 
-        <div>
+          <div id="social-icons" class="item-footer">
             <h1>Redes Sociais</h1>
             <a href="https://facebook.com/jhollyferr" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
             <a href="https://instagram.com/_jhollyferr" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
             <a href="https://linkedin.com/in/jhollyferr" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
             <a href="https://github.com/jhollyferr" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-        </div>
+          </div>
 
+        </div>
+        <p>Copyright &copy; Jhollyfer Rodrigues</p>
     </footer>
   </body>
 </html>
