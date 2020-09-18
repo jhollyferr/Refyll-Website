@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?Orbitron:wght@400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    font-family: Neucha, sans-serif;
+    font-family: Orbitron, sans-serif;
 }
 
 body{
@@ -20,6 +20,8 @@ header{
     width: 100%;
     background:#22262b;
     color: #312d2d;
+    position: fixed;
+    top: 0;
 }
 
 nav{
@@ -42,7 +44,7 @@ ul{
     margin-right: 15px;
 }
 
-.items-menu{
+.item-menu{
     width: auto;
     height: 100%;
     text-transform: uppercase;
@@ -50,7 +52,7 @@ ul{
     transition: all 0.15s;
 }
 
-.items-menu:hover{
+.item-menu:hover{
     cursor: pointer;
     background: #1a1b1d;
     border-radius: 5px;
@@ -108,8 +110,8 @@ ul{
 }
 
 .text{
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 42px;
     width: 40%;
     font-weight: 600;
 }
@@ -232,6 +234,38 @@ footer{
     color: red !important;
 }
 
+.wpp-container img{
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
+
+.wpp-container .float{
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+}
+
+#caixaTexto{
+    background: #e9e6e6;
+    color: #000;
+    position: fixed;
+    width: 180px;
+    bottom: 70px;
+    font-weight: bold;
+    right: 80px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    visibility: hidden;
+    cursor: pointer;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    text-align: center;
+}
+
 footer>p{
     display: flex;
     align-items: center;
@@ -239,4 +273,26 @@ footer>p{
     margin-top: 80px;
     font-size: 20px;
     line-height: 30px;
+}
+
+/* Scroll personalizado */
+
+::-webkit-scrollbar{
+    /* largura */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    /* cor de fundo da barra */
+    background: #1a202b;
+}
+
+::-webkit-scrollbar-thumb{
+    /* cor  da barra de rolagem */
+    background:#324274;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#3766e9;
 }

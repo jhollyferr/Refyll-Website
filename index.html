@@ -19,11 +19,11 @@
       <nav>
         <ul>
           <img src="img/icon.png" alt="Logo" id="logo"/>
-          <a href="#inicio" class="items-menu">Inicio</a>
-          <a href="#conta-digital" class="items-menu">Conta Digital</a>
-          <a href="#cartao-credito" class="items-menu">Cartão de Créditos</a>
-          <a href="#rewards" class="items-menu">Rewards</a>
-          <a href="#contato" class="items-menu">Contato</a>
+          <a href="#inicio" class="item-menu">Inicio</a>
+          <a href="#conta-digital" class="item-menu">Conta Digital</a>
+          <a href="#cartao-credito" class="item-menu">Cartão de Créditos</a>
+          <a href="#rewards" class="item-menu">Rewards</a>
+          <a href="#contato" class="item-menu">Contato</a>
         </ul>
         <div id="right-side-menu-itens">
           <div id="login">
@@ -34,8 +34,34 @@
       </nav>
     </header>
 
-    <div class="container">
-      <!-- Conta Digital Section -->
+    <div class="wpp-container">
+      <a href="https://api.whatsapp.com/send?phone=559784156083&text=Olá,%20Joebert." target="_blank" class="float">
+        <img src="img/whatsapp.svg" alt="whatsapp">
+      </a>
+
+      <div id="caixaTexto">
+        Fale conosco via Whatsapp.
+      </div>
+      
+    </div>
+
+        <!-- Home Section -->
+        <section id="cartao-credito" class="container-content">
+          <div class="content-box">
+            <img src="img/home.jpg" alt="Cartão de Crédito" class="img-default"/>
+            <p class="text text-right">
+              <span class="text-title">Refyll Bank</span>
+              <br>
+              Trabalhe com seu dinheiro de maneira mais 
+              inteligente. Planejar, economizar e investir com taxas 
+              de juros impressionantes
+              <br>
+              <span><a href="" class="btn-secondary">Saiba mais</a></span>
+            </p>
+            
+          </div>
+        </section>
+
       <section id="conta-digital" class="container-content">
         <div class="content-box">
           <p class="text text-left">
@@ -131,5 +157,6 @@
         </div>
         <p>Copyright &copy; Jhollyfer Rodrigues</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
